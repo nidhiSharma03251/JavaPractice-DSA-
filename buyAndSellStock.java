@@ -11,11 +11,12 @@ public class buyAndSellStock {
             }else{
                 bestBuy = Math.min(bestBuy, prices[i]);
             }
+            System.out.println("best buy = " + bestBuy);
         }
         return maxPro;
     }
     public static void main(String args[]){
-        int prices[] = {7,6,8,2,5,9};
+        int prices[] = {7,6,5,4,3,2};
 
         System.out.println("MAx profit = " + maximumProfit(prices)); 
     }

@@ -141,6 +141,33 @@ public class advancedPatterns {
         }
     }
 
+    public static void random(int n){
+        for(int i=1; i<=n; i++){
+            for(int j=1; j<i; j++){
+                System.out.print(" ");
+            }
+            for(int j=i; j<=n; j++){
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
+
+    public static void palindromePyramid(int n){
+        for(int i=1; i<=n; i++){
+            for(int j=1; j<=n-i; j++){
+                System.out.print(" ");
+            }
+            for(int j=1; j<=i; j++){
+                System.out.print(j);
+            }
+            for(int j=i-1; j>=1; j--){
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String args[]){
         hollowRectangle(4,5);
         invRotatedHalfPyr(5);
@@ -151,5 +178,8 @@ public class advancedPatterns {
         rhombus(7);
         hollowRhombus(10);
         diamond(10);
+        random(6);
+        System.out.println();
+        palindromePyramid(6);
     }
 }
